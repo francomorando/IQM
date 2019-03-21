@@ -1,5 +1,5 @@
 # IQM
-Prolog package for Initial Quasi Manifold decomposition.
+A Prolog package for Initial Quasi Manifold decomposition.
 This is a proof of concept prototype for the results in the thesis:
 
 ## Examples
