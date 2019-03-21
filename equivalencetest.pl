@@ -1,0 +1,21 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This program  tests equivalence_classes predicate
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+:-consult("utilities.pl").
+r(a,b).
+r(b,a).
+r(c,b).
+r(b,c).
+r(c,a).
+r(a,c).
+r(f,g).
+r(g,f).
+r(g,h).
+r(h,g).
+r(k,h).
+r(h,k).
+r(i,j).
+r(j,i).
+r(j,r).
+main:-closurePartition(r,[a,b,c,e,f,g,h,k,i,j,r],Classes), 
+  print_term(Classes,[]).

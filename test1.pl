@@ -1,0 +1,25 @@
+:-consult("iqm.pl").
+test1:-
+	resetComplex,
+	addSimplex(1,[j,k,q]),
+	addSimplex(2,[j,k,l]),
+	addSimplex(3,[j,k,m]),
+	addSimplex(4,[j,l,n]),
+	incident(1,[j,k]),
+	not(incident(1,[l,n])),
+	adjacent(1,2,X),write("1 and 2 adjacent at:"),write(X),nl,
+	orderOf([j,k],N),write("N="),write(N),nl,
+	dm1connectedComponents(C),
+	 write("1-connected component:"),write(C),nl,
+      	listNonPseudoManifolds, 
+	boundary(B),write("boundary"),write(B),nl,
+	resetDecomposition,buildTotallyExploded,
+	doGluingInstruction(1,2),
+	dumpDecomp,
+	doVertexEquation(2,3,k),
+	doPseudoManifoldGluingInstruction(2,4),
+	dumpDecomp,
+	splitVertex(V),write("splitted "),write(V),nl,
+	doVertexEquation(2,3,j),
+	not(splitVertex(_)).
+
