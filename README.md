@@ -1,7 +1,6 @@
 # IQM
 A Prolog package for Initial Quasi Manifold decomposition.
-This is a proof of concept prototype for the results in the thesis:
-
+This is a proof of concept prototype for the results in the thesis: [Decomposition and Modeling in the Non-Manifold Domain](https://www.academia.edu/38601865/Decomposition_and_Modeling_in_the_Non-Manifold_Domain)
 ## Examples
 Included there are some examples about different parts of the package
 ### File equivalencetest.pl 
